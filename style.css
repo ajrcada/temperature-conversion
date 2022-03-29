@@ -1,0 +1,41 @@
+body {
+   background-color: lightgray;
+   color: black;
+   font: 1.4em calibri, arial;
+   text-align: center;
+}
+h1 {
+   font-size: 1.4em;
+   font-style: oblique;
+   text-align: center;
+}
+form {
+   display: inline-block;
+   padding: 2%;
+   border: 2px solid black;
+}
+label {
+   font-size: 1em;
+   font-weight: bolder;
+   text-align: left;
+   display: inline-block;
+   width: 280px;
+}
+input {
+   background-color: darkgray;
+   text-align: right;
+   font-weight: bold;
+}
+
+textarea {
+   font-family: "Courier New", Courier;
+   font-size: 20px;
+   text-align: center;
+}
+button {
+   box-shadow: 2px 2px black;
+   font-size: medium;
+   padding: 10px;
+   margin-right: 10px;
+   display: inline;
+}

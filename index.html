@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Temperature Conversion</title>
+   </head>
+
+   <body onload="disableButton()">
+      <h1>Temperature Conversion by Arman Cadahing</h1>
+
+      <section>
+         <form onsubmit="return toSubmit()">
+            <label for="Fahrenheit">Fahrenheit</label>
+            <input
+               type="text"
+               autofocus
+               autocomplete="off"
+               id="Fahrenheit"
+               maxlength="4"
+               onkeydown="return isInputNumber(event)"
+            />
+            <br />
+            <label for="Celsius">Celsius</label>
+            <input readonly type="text" id="Celsius" /> <br /><br />
+            <label for="results"
+               >Fahrenheit &emsp; &emsp; &emsp; &emsp;Celsius</label
+            >
+            <br />
+            <textarea readonly id="results" cols="40" rows="20"></textarea>
+            <br />
+            <button type="submit" id="convert" onclick="convertTemp()">
+               <u>C</u>onvert
+            </button>
+            <button type="submit" id="average" onclick="averageTemp()">
+               <u>A</u>verage
+            </button>
+            <button type="reset" onclick="disableButton()" id="reset">
+               <u>R</u>eset
+            </button>
+            <h6>&nbsp;</h6>
+         </form>
+      </section>
+
+      <script src="./script.js"></script>
+   </body>
+</html>
